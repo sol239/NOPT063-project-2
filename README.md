@@ -7,6 +7,7 @@ Tento projekt obsahuje dvě prezentace vytvořené v systému LaTeX (třída Bea
 *   `img/` - Adresář s obrázky použitými v prezentacích.
 *   `nova_konverzace/prezentace/` - První prezentace (zdrojový kód `prezentace.tex` a bibliografie `references.bib`).
 *   `shrnuti_konverzace/prezentace/` - Druhá prezentace (zdrojový kód `prezentace.tex` a bibliografie `references.bib`).
+*   `pozvanky/` - Mailové pozvánky na prezentace vygenerované různými AI modely (formální a neformální verze).
 
 ## Prerekvizity
 
