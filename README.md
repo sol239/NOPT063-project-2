@@ -58,3 +58,27 @@ Pokud používáte Visual Studio Code, doporučujeme nainstalovat rozšíření 
 
 *   **Chybějící obrázky:** Ujistěte se, že složka `img/` existuje v kořenovém adresáři projektu a že cesty v `.tex` souborech (např. `../../img/obrazek.png`) jsou správné.
 *   **Chybějící balíčky:** Pokud vám při kompilaci chybí nějaké LaTeX balíčky (např. `beamer`, `biblatex`), MiKTeX se je obvykle pokusí nainstalovat automaticky (vyskočí dialogové okno). U TeX Live je nutné je doinstalovat přes správce balíčků.
+
+---
+
+## Checklist projektu
+
+### ✅ Splněné úkoly
+
+- ✅ **Zvolení tématu:** Architektura softwarových systémů
+- ✅ **Konverzace s chatbotem:** Získání informací o tématu za pomoci AI chatbotů
+- ✅ **Ověření výstupů:** Použití různých chatbotů pro cross-checking informací
+- ✅ **Ruční ověření:** Kontrola správnosti informací a testování halucinací
+- ✅ **Shrnutí z konverzace:** Vytvoření souvislého textu na konci původní konverzace (`shrnuti_konverzace/shrnuti.md`)
+- ✅ **Shrnutí v nové konverzaci:** Vytvoření shrnutí v nové konverzaci (`nova_konverzace/shrnuti.md`)
+- ✅ **Porovnání shrnutí:** Analýza rozdílů mezi oběma shrnutími
+- ✅ **LaTeX prezentace:** Vytvoření prezentace v Beameru na základě shrnutí
+  - Prezentace v `nova_konverzace/prezentace/prezentace.tex`
+  - Prezentace v `shrnuti_konverzace/prezentace/prezentace.tex`
+- ✅ **BibTeX reference:** Správa zdrojů pomocí BibTeXu (`references.bib`)
+- ✅ **Generování obrázků:** Vytvoření ilustračních obrázků pomocí AI generátorů (složka `img/`)
+- ✅ **Vyhledání obrázků:** Nalezení vhodných ilustračních obrázků na internetu
+- ✅ **Kompilace do PDF:** Převod LaTeX zdrojového kódu do PDF formátu
+- ✅ **Formální pozvánka:** Oficiální pozvánka pro Učenou společnost (`pozvanky/*/formalni.md`)
+- ✅ **Neformální pozvánka:** Přátelská pozvánka pro známé (`pozvanky/*/neformalni.md`)
+
