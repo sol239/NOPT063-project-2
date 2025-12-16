@@ -1,0 +1,208 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{soft_sys_design}{online}{}
+      \name{author}{1}{}{%
+        {{hash=aabda18b99d00c4f9bccc4912b0f03ee}{%
+           family={Design},
+           familyi={D\bibinitperiod},
+           given={Software\bibnamedelima System},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{aabda18b99d00c4f9bccc4912b0f03ee}
+      \strng{fullhash}{aabda18b99d00c4f9bccc4912b0f03ee}
+      \strng{bibnamehash}{aabda18b99d00c4f9bccc4912b0f03ee}
+      \strng{authorbibnamehash}{aabda18b99d00c4f9bccc4912b0f03ee}
+      \strng{authornamehash}{aabda18b99d00c4f9bccc4912b0f03ee}
+      \strng{authorfullhash}{aabda18b99d00c4f9bccc4912b0f03ee}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-12-16}
+      \field{title}{Modeling & Documentation}
+      \verb{urlraw}
+      \verb https://softwaresystemdesign.com/software-architecture-design/modeling-and-documentation/architecture-documentation-best-practices/
+      \endverb
+      \verb{url}
+      \verb https://softwaresystemdesign.com/software-architecture-design/modeling-and-documentation/architecture-documentation-best-practices/
+      \endverb
+    \endentry
+    \entry{geeks_patterns}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={GeeksforGeeks},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-12-16}
+      \field{title}{Software Architecture Patterns}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/software-engineering/types-of-software-architecture-patterns/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/software-engineering/types-of-software-architecture-patterns/
+      \endverb
+    \endentry
+    \entry{arch_guild}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7f948bfc836dbf6771a9178e1df8c54a}{%
+           family={Guild},
+           familyi={G\bibinitperiod},
+           given={Software\bibnamedelima Architecture},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f948bfc836dbf6771a9178e1df8c54a}
+      \strng{fullhash}{7f948bfc836dbf6771a9178e1df8c54a}
+      \strng{bibnamehash}{7f948bfc836dbf6771a9178e1df8c54a}
+      \strng{authorbibnamehash}{7f948bfc836dbf6771a9178e1df8c54a}
+      \strng{authornamehash}{7f948bfc836dbf6771a9178e1df8c54a}
+      \strng{authorfullhash}{7f948bfc836dbf6771a9178e1df8c54a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-12-16}
+      \field{title}{Architecture Styles}
+      \verb{urlraw}
+      \verb https://software-architecture-guild.com/guide/architecture/fundamentals/architecture-styles/
+      \endverb
+      \verb{url}
+      \verb https://software-architecture-guild.com/guide/architecture/fundamentals/architecture-styles/
+      \endverb
+    \endentry
+    \entry{sei_arch}{online}{}
+      \name{author}{1}{}{%
+        {{hash=22f1480a473df6c60ece73af486a0726}{%
+           family={Institute},
+           familyi={I\bibinitperiod},
+           given={Software\bibnamedelima Engineering},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{22f1480a473df6c60ece73af486a0726}
+      \strng{fullhash}{22f1480a473df6c60ece73af486a0726}
+      \strng{bibnamehash}{22f1480a473df6c60ece73af486a0726}
+      \strng{authorbibnamehash}{22f1480a473df6c60ece73af486a0726}
+      \strng{authornamehash}{22f1480a473df6c60ece73af486a0726}
+      \strng{authorfullhash}{22f1480a473df6c60ece73af486a0726}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-12-16}
+      \field{title}{Software Architecture}
+      \verb{urlraw}
+      \verb https://resources.sei.cmu.edu/library/subject-areas/software-architecture/
+      \endverb
+      \verb{url}
+      \verb https://resources.sei.cmu.edu/library/subject-areas/software-architecture/
+      \endverb
+    \endentry
+    \entry{sap_data_arch}{online}{}
+      \name{author}{1}{}{%
+        {{hash=999bc6b18351bbe817d26f559ba408ae}{%
+           family={SAP},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{bibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorbibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authornamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-12-16}
+      \field{title}{What is Data Architecture}
+      \verb{urlraw}
+      \verb https://www.sap.com/cz/resources/what-is-data-architecture
+      \endverb
+      \verb{url}
+      \verb https://www.sap.com/cz/resources/what-is-data-architecture
+      \endverb
+    \endentry
+    \entry{wiki_4plus1}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-12-16}
+      \field{title}{4+1 architectural view model}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/4%2B1_architectural_view_model
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/4%2B1_architectural_view_model
+      \endverb
+    \endentry
+    \entry{wiki_furps}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-12-16}
+      \field{title}{FURPS}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/FURPS
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/FURPS
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

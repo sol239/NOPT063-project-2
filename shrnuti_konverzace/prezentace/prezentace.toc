@@ -1,0 +1,9 @@
+\babel@toc {czech}{}\relax 
+\beamer@sectionintoc {1}{Úvod do architektury SW systémů}{4}{0}{1}
+\beamer@sectionintoc {2}{Architektonické styly}{5}{0}{2}
+\beamer@sectionintoc {3}{Pohledy na SW architekturu}{9}{0}{3}
+\beamer@sectionintoc {4}{Modelování a dokumentace}{10}{0}{4}
+\beamer@sectionintoc {5}{Kvalitativní atributy}{11}{0}{5}
+\beamer@sectionintoc {6}{Vybrané architektonické vzory}{12}{0}{6}
+\beamer@sectionintoc {7}{Datová architektura}{13}{0}{7}
+\beamer@sectionintoc {8}{Zdroje}{14}{0}{8}

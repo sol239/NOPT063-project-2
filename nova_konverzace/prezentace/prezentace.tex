@@ -1,0 +1,167 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+% Meta data
+\title{Architektura Softwarových Systémů}
+\subtitle{Shrnutí klíčových konceptů}
+\author{GitHub Copilot}
+\date{\today}
+
+% Bibliography setup
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Table of contents
+\begin{frame}{Obsah}
+    \tableofcontents
+\end{frame}
+
+% Related Image
+\begin{frame}{Vizualizace}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../related_image.png}
+        \caption{Vizualizace z konverzace}
+    \end{figure}
+\end{frame}
+
+% Section 1: Úvod
+\section{Úvod do architektur SW systémů}
+\begin{frame}{Úvod do architektur SW systémů}
+    \begin{itemize}
+        \item \textbf{SW architektura} popisuje strukturu systému, komponenty a vztahy \parencite{bass2012software}.
+        \item Slouží k řízení složitosti a zajištění kvalitativních atributů (výkonnost, bezpečnost, modifikovatelnost).
+        \item \textbf{Hlavní cíle:}
+        \begin{itemize}
+            \item Komunikace mezi týmy
+            \item Základ pro rozhodnutí o návrhu
+            \item Dokumentace a údržba
+        \end{itemize}
+        \item Tvoří se na vysoké úrovni abstrakce, bez implementačních detailů \parencite{shaw1996software}.
+    \end{itemize}
+\end{frame}
+
+% Section 2: Architektonické styly
+\section{Architektonické styly}
+\begin{frame}{Architektonické styly - Přehled}
+    \begin{itemize}
+        \item \textbf{Monolitický styl:} Vše v jedné aplikaci. Jednoduchý, ale hůře škálovatelný.
+        \item \textbf{Klient-server:} Oddělení UI a logiky.
+        \item \textbf{Vrstevnatá architektura:} Rozdělení do vrstev (prezentace, logika, data).
+        \item \textbf{Pipes \& Filters:} Transformace datových toků.
+        \item \textbf{Event-driven:} Reakce na události, asynchronní systémy \parencite{richards2020fundamentals}.
+        \item \textbf{Microservices:} Nezávislé služby, komunikace přes API \parencite{fowler2014microservices}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Monolitický styl}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../../img/monolith-gemini.png}
+        \caption{Monolitický styl (Gemini)}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Klient-Server}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../../img/client-server-chatgpt.png}
+        \caption{Klient-Server (ChatGPT)}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Microservices}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../../img/microservices-chatgpt.png}
+        \caption{Microservices (ChatGPT)}
+    \end{figure}
+\end{frame}
+
+% Section 3: Pohledy na SW architekturu
+\section{Pohledy na SW architekturu}
+\begin{frame}{Pohledy na SW architekturu}
+    Různé perspektivy pro různé stakeholdery:
+    \begin{itemize}
+        \item \textbf{Logický pohled:} Hlavní komponenty a interakce.
+        \item \textbf{Fyzický pohled:} Rozmístění SW na HW (deployment).
+        \item \textbf{Procesní pohled:} Dynamické chování a toky dat.
+        \item \textbf{Datový pohled:} Struktura a tok dat.
+        \item \textbf{Vývojový pohled:} Modulární struktura pro vývoj.
+    \end{itemize}
+\end{frame}
+
+% Section 4: Modelování a dokumentace
+\section{Modelování a dokumentace}
+\begin{frame}{Modelování a dokumentace SW architektury}
+    \begin{itemize}
+        \item \textbf{Cíle:} Sdílení znalostí, plánování, údržba.
+        \item \textbf{Standardy a notace:}
+        \begin{itemize}
+            \item UML (Use Case, Class, Component, Deployment diagramy)
+            \item ArchiMate
+            \item C4 model \parencite{c4model}
+        \end{itemize}
+        \item \textbf{Klíčové diagramy:} Komponentní, Nasazení, Toků dat.
+    \end{itemize}
+\end{frame}
+
+% Section 5: Kvalitativní atributy
+\section{Kvalitativní atributy}
+\begin{frame}{Kvalitativní atributy (Quality Attributes)}
+    Vlastnosti systému nad rámec funkčnosti \parencite{bass2012software}:
+    \begin{itemize}
+        \item \textbf{Dostupnost (Availability):} Odolnost vůči chybám.
+        \item \textbf{Modifikovatelnost (Modifiability):} Snadná změna.
+        \item \textbf{Výkonnost (Performance):} Rychlost a efektivita.
+        \item \textbf{Bezpečnost (Security):} Ochrana dat a přístupu.
+        \item \textbf{Integrovatelnost, Znovupoužitelnost, Testovatelnost.}
+        \item \textbf{Uživatelská přívětivost (Usability).}
+    \end{itemize}
+\end{frame}
+
+% Section 6: Architektonické vzory
+\section{Architektonické vzory}
+\begin{frame}{Vybrané architektonické vzory}
+    Ověřená řešení opakujících se problémů:
+    \begin{itemize}
+        \item \textbf{MVC (Model-View-Controller):} Oddělení dat, UI a logiky.
+        \item \textbf{Layered (Vrstevnatý):} Hierarchické uspořádání zodpovědností.
+        \item \textbf{Repository:} Centrální úložiště dat.
+        \item \textbf{Broker:} Middleware pro komunikaci.
+        \item \textbf{Peer-to-Peer:} Decentralizovaná spolupráce uzlů.
+    \end{itemize}
+\end{frame}
+
+% Section 7: Datová architektura
+\section{Datová architektura}
+\begin{frame}{Datová architektura}
+    Správa a tok dat v systému:
+    \begin{itemize}
+        \item \textbf{Datové modely:} ER diagramy, relační vs. NoSQL.
+        \item \textbf{Úložiště:} Data warehouses, Data lakes.
+        \item \textbf{Integrace:} Datové toky.
+        \item \textbf{Správa:} Security, zálohování, kvalita dat.
+    \end{itemize}
+\end{frame}
+
+% References
+\section{Zdroje}
+\begin{frame}[allowframebreaks]{Zdroje}
+    \printbibliography
+\end{frame}
+
+\end{document}

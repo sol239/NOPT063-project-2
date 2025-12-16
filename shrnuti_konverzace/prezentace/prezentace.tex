@@ -1,0 +1,153 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=numeric]{biblatex}
+
+\addbibresource{references.bib}
+
+\title{Architektura softwarových systémů}
+\subtitle{Shrnutí konverzace}
+\author{AI Assistant}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Obsah}
+    \tableofcontents
+\end{frame}
+
+\begin{frame}{Vizualizace}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../related_image.png}
+        \caption{Vizualizace z konverzace}
+    \end{figure}
+\end{frame}
+
+\section{Úvod do architektury SW systémů}
+\begin{frame}{Úvod do architektury SW systémů}
+    \begin{itemize}
+        \item Softwarová architektura popisuje \textbf{vysokou strukturu systému}, komponenty a jejich interakce.
+        \item Cílem je \textbf{zajištění kvality, flexibility a udržovatelnosti} systému.
+        \item Klíčové role architektury: plánování, dokumentace, rozhodování.
+    \end{itemize}
+    \vspace{1cm}
+    \footnotesize{Zdroj: \cite{sei_arch}}
+\end{frame}
+
+\section{Architektonické styly}
+\begin{frame}{Architektonické styly - Přehled}
+    \begin{itemize}
+        \item \textbf{Vrstvená (Layered)} – logické vrstvy, separace zodpovědností.
+        \item \textbf{Client–Server} – centralizovaná logika, komunikace přes síť.
+        \item \textbf{Monolit} – jeden celek, jednoduchý na začátku, horší škálovatelnost.
+        \item \textbf{Microservices} – malé nezávislé služby, škálovatelnost.
+        \item \textbf{SOA} – služby s Enterprise Service Bus.
+        \item \textbf{Event‑Driven} – komunikace přes události, real‑time systémy.
+        \item \textbf{Hexagonální / Clean Architecture} – oddělení jádra od adaptérů.
+    \end{itemize}
+    \vspace{0.5cm}
+    \footnotesize{Zdroj: \cite{arch_guild}}
+\end{frame}
+
+\begin{frame}{Monolit}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../../img/monolith-gemini.png}
+        \caption{Monolitický styl}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Client-Server}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../../img/client-server-chatgpt.png}
+        \caption{Client-Server architektura}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Microservices}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../../img/microservices-chatgpt.png}
+        \caption{Microservices architektura}
+    \end{figure}
+\end{frame}
+
+\section{Pohledy na SW architekturu}
+\begin{frame}{Pohledy na SW architekturu}
+    \begin{itemize}
+        \item Pohledy umožňují různým stakeholderům \textbf{vidět systém podle svých potřeb}.
+        \item \textbf{4+1 Views} (Philippe Kruchten):
+        \begin{enumerate}
+            \item Logický – co systém dělá
+            \item Procesní – chování za běhu
+            \item Vývojový – modulární struktura kódu
+            \item Fyzický – nasazení a infrastruktura
+            \item Scénáře / Use Cases – případy použití
+        \end{enumerate}
+        \item Alternativy: C4 model, ISO/IEC 42010.
+    \end{itemize}
+    \vspace{0.5cm}
+    \footnotesize{Zdroj: \cite{wiki_4plus1}}
+\end{frame}
+
+\section{Modelování a dokumentace}
+\begin{frame}{Modelování a dokumentace SW architektury}
+    \begin{itemize}
+        \item \textbf{Modelování} – vytváření diagramů a modelů pro pochopení systému.
+        \item \textbf{Dokumentace} – soubor artefaktů: struktura, rozhodnutí, pohledy.
+        \item Standardy: UML, C4, ArchiMate.
+        \item \textbf{ADR} (Architecture Decision Records) – zaznamenání důležitých rozhodnutí.
+        \item Doporučení: udržovat dokumentaci živou, používat nástroje (PlantUML, Structurizr, Archi).
+    \end{itemize}
+    \vspace{0.5cm}
+    \footnotesize{Zdroj: \cite{soft_sys_design}}
+\end{frame}
+
+\section{Kvalitativní atributy}
+\begin{frame}{Kvalitativní atributy SW architektury}
+    \begin{itemize}
+        \item \textbf{Klíčové atributy:} Dostupnost, Modifikovatelnost, Výkonnost, Bezpečnost, Integrovatelnost, Znovupoužitelnost, Testovatelnost, Uživatelská přívětivost.
+        \item Slouží k definici \textit{nefunkčních požadavků} a ovlivňují architektonická rozhodnutí.
+    \end{itemize}
+    \vspace{1cm}
+    \footnotesize{Zdroj: \cite{wiki_furps}}
+\end{frame}
+
+\section{Vybrané architektonické vzory}
+\begin{frame}{Vybrané architektonické vzory}
+    \begin{itemize}
+        \item \textbf{Příklady:} Vrstvená, Client–Server, Event‑Driven, Microservices, Hexagonální, Microkernel, Space-Based, CQRS, P2P, Strangler, MVC.
+        \item Vzory řeší opakující se architektonické problémy a podporují škálovatelnost, modularitu a udržovatelnost.
+    \end{itemize}
+    \vspace{1cm}
+    \footnotesize{Zdroj: \cite{geeks_patterns}}
+\end{frame}
+
+\section{Datová architektura}
+\begin{frame}{Datová architektura}
+    \begin{itemize}
+        \item Popisuje \textbf{strukturu, toky, úložiště a správu dat} napříč systémy a organizací.
+        \item \textbf{Klíčové komponenty:} datové modely (konceptuální, logické, fyzické), datové toky, úložiště, governance, přístup.
+        \item Důležitá pro: kvalitu, bezpečnost, analytiku, AI/ML, integraci a rozhodování.
+    \end{itemize}
+    \vspace{1cm}
+    \footnotesize{Zdroj: \cite{sap_data_arch}}
+\end{frame}
+
+\section{Zdroje}
+\begin{frame}[allowframebreaks]{Zdroje}
+    \printbibliography
+\end{frame}
+
+\end{document}
