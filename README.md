@@ -1,4 +1,4 @@
-# Návod k sestavení prezentací
+# Informační projekt: Prezentace o architektuře softwarových systémů
 
 Tento projekt obsahuje dvě prezentace vytvořené v systému LaTeX (třída Beamer), které shrnují téma softwarové architektury.
 
